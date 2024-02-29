@@ -1,0 +1,51 @@
+{
+  "name": "apolo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start --port 8082",
+    "test": "jest",
+    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/apolo/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'"
+  },
+  "dependencies": {
+    "@mauron85/react-native-background-geolocation": "^0.6.3",
+    "@react-native-community/netinfo": "^2.0.10",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
+    "native-base": "^2.12.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.8.3",
+    "react-native": "0.58.5",
+    "react-native-country-picker-modal": "^0.7.1",
+    "react-native-firebase": "^5.2.3",
+    "react-native-geolocation-service": "^2.0.0",
+    "react-native-gesture-handler": "^1.0.16",
+    "react-native-image-crop-picker": "^0.24.0",
+    "react-native-ionicons": "^4.5.5",
+    "react-native-keep-awake": "^4.0.0",
+    "react-native-maps": "^0.23.0",
+    "react-native-maps-directions": "^1.6.0",
+    "react-native-modal-datetime-picker": "^6.0.0",
+    "react-native-modalbox": "^1.7.1",
+    "react-native-open-map": "^3.0.0",
+    "react-native-open-maps": "^0.3.3",
+    "react-native-phone-input": "^0.2.2",
+    "react-native-sensors": "^5.1.8",
+    "react-native-sound": "^0.10.12",
+    "react-native-webview": "^7.0.1",
+    "react-navigation": "^3.3.0",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.1.0",
+    "jest": "24.1.0",
+    "metro-react-native-babel-preset": "0.52.0",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
